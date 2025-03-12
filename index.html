@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARTECH Software</title>
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Particles.js Background -->
+    <div id="particles-js"></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- Logo/Marka -->
+            <a class="navbar-brand" href="/">
+                <img src="" alt=""> SARTECH
+            </a>
+
+            <!-- Mobil Menü Butonu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menü İçeriği -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Anasayfa</a>
+                    </li>
+
+                    <!-- Hizmetler Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            Hizmetlerimiz
+                        </a>
+                        <ul class="dropdown-menu animate slideIn">
+                            <li><a class="dropdown-item" href="#wordpress-section" onclick="scrollToSection('wordpress-section')">Web Site Hizmeti</a></li>
+                            <li><a class="dropdown-item" href="#seo-section" onclick="scrollToSection('seo-section')">SEO</a></li>
+                            <li><a class="dropdown-item" href="#digital-marketing-section" onclick="scrollToSection('digital-marketing-section')">Google ADS Reklam Yönetimi</a></li>
+                            <li><a class="dropdown-item" href="#brand-section" onclick="scrollToSection('brand-section')">Marka Yönetim Danışmanlığı</a></li>
+                            <li><a class="dropdown-item" href="#ecommerce-section" onclick="scrollToSection('ecommerce-section')">E-Ticaret Optimizasyonu</a></li>
+                            <li><a class="dropdown-item" href="#maps-section" onclick="scrollToSection('maps-section')">Google Haritalar SEO</a></li>
+                            <li><a class="dropdown-item" href="#erp-section" onclick="scrollToSection('erp-section')">ERP Sistemleri</a></li>
+                            <li><a class="dropdown-item" href="#apps-section" onclick="scrollToSection('apps-section')">Mobil Uygulamalar</a></li>
+                            <li><a class="dropdown-item" href="#apps-section" onclick="scrollToSection('apps-section')">Web Uygulamaları</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Hakkımızda Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown">
+                            Hakkımızda
+                        </a>
+                        <ul class="dropdown-menu animate slideIn">
+                            <li><a class="dropdown-item" href="about.html#kurumsal">Kurumsal</a></li>
+                            <li><a class="dropdown-item" href="about.html#referanslar">Referanslar</a></li>
+                            <li><a class="dropdown-item" href="about.html#kadromuz">Kadromuz</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    </li>
+                </ul>
+
+                <!-- İletişim Bilgileri -->
+                <div class="contact-info">
+                    <a href="mailto:info@sartech.com" class="me-3">
+                        <i class="fas fa-envelope me-2"></i>
+                        <span>
+                            <span class="contact-label">E-posta</span>
+                        <span class="contact-value">info@sartech.com</span>
+                        </span>
+                    </a>
+                    <a href="tel:+905346994117" class="me-2">
+                        <i class="fas fa-phone me-2"></i>
+                        <span>
+                            <span class="contact-label">Ali Furkan Sağır</span>
+                        <span class="contact-value">+90 534 699 41 17</span>
+                        </span>
+                    </a>
+                    <a href="tel:+905516204002">
+                        <i class="fas fa-phone me-2"></i>
+                        <span>
+                            <span class="contact-label">İlyas Efe Sarısüleyman</span>
+                        <span class="contact-value">+90 551 620 40 02</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Particles.js Container -->
+        <div id="particles-js"></div>
+
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="hero-title">
+                        <span class="typed-text"></span>
+                    </h1>
+                    <p class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                        SEO'dan sosyal medya stratejilerine, özelleştirilmiş yazılım çözümlerine kadar tam kapsamlı dijital hizmetlerle markanızı geleceğe taşıyoruz.
+                    </p>
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                        <button class="btn btn-light btn-lg me-3">Hizmetlerimiz</button>
+                        <button class="btn btn-success btn-lg">WhatsApp</button>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <!-- Swiper Slider -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\2.png" alt="Slide 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\resim-opt.jpg" alt="Slide 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\Web-tasarim.jpg" alt="Slide 3">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Neden Bizi Tercih Etmelisiniz?</h2>
+                <p>Performans pazarlama çözümlerimizle işinizi bir üst seviyeye taşıyoruz. Size özel stratejiler ve profesyonel yaklaşımımızla her zaman yanınızdayız.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Uzman Ekip</h3>
+                        <p>Alanında uzman ve deneyimli ekibimizle en iyi çözümleri sunuyoruz. Her projede profesyonel yaklaşım ve yenilikçi fikirler.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Hızlı Aksiyon</h3>
+                        <p>Hızlı ve etkili çözümlerle projelerinizi zamanında teslim ediyoruz. Çevik metodolojilerle sürekli gelişim ve adaptasyon.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>7/24 Destek</h3>
+                        <p>Kesintisiz teknik destek ve müşteri hizmetleriyle her an yanınızdayız. Sorularınıza anında çözüm, taleplerinize hızlı yanıt.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Detaylı Raporlama</h3>
+                        <p>Şeffaf ve detaylı raporlamalarla projenizin her aşamasını takip edin. Veriye dayalı kararlar ve sürekli optimizasyon.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Kolay Ulaşılabilirlik</h3>
+                        <p>Birden fazla iletişim kanalıyla size her zaman bir tık kadar yakınız. Hızlı geri dönüşler ve çözüm odaklı iletişim.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Section -->
+    <section class="seo-section py-5" id="seo-section" data-aos="fade-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="seo-content">
+                        <div class="section-icon mb-4" data-aos="zoom-in">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <span class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-star me-2"></i>Sıralamalar Yükselsin, İşiniz Büyüsün
+                        </span>
+                        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
+                            SEO ile <span class="highlight">Zirveye!</span>
+                            <span class="title-accent">🚀</span>
+                        </h2>
+                        <p class="section-description" data-aos="fade-up" data-aos-delay="300">
+                            İşletmenizin <span class="text-primary">Google'da öne çıkmasını</span> sağlayacak profesyonel SEO çalışmalarımızla dijital dünyada öne çıkın. Uzman ekibimizle birlikte <span class="text-primary">organik trafiğinizi artırın</span>                            ve rakiplerinizin önüne geçin.
+                        </p>
+                        <div class="seo-stats row g-4 mt-4" data-aos="fade-up" data-aos-delay="400">
+                            <div class="col-6">
+                                <div class="stat-item">
+                                    <span class="stat-number">500+</span>
+                                    <span class="stat-text">Mutlu Müşteri</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-item">
+                                    <span class="stat-number">%89</span>
+                                    <span class="stat-text">Başarı Oranı</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#seo-process" class="seo-link mt-4" data-aos="fade-up" data-aos-delay="500">
+                            <span class="link-text">SEO Sürecimiz Nasıl İlerliyor?</span>
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                        <div class="seo-features mt-5">
+                            <div class="row g-4">
+                                <div class="col-6" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="seo-feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Hızlı Sonuç</h4>
+                                            <p>Organik Trafik Artışı</p>
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-delay="700">
+                                    <div class="seo-feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-award"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Başarı Garantili</h4>
+                                            <p>Sıralamalarda İyileşme</p>
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 92%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="seo-image">
+                        <div class="image-wrapper">
+                            <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\seo.jpg" alt="SEO Çalışmaları" class="img-fluid">
+                            <div class="floating-badge">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Google Sertifikalı</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WordPress Web Design Section -->
+    <section class="wordpress-section py-5" id="wordpress-section" data-aos="fade-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="wordpress-content">
+                        <div class="section-icon mb-4" data-aos="zoom-in">
+                            <i class="fab fa-wordpress"></i>
+                        </div>
+                        <span class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-laptop-code me-2"></i>Modern ve Hızlı WordPress Siteler
+                        </span>
+                        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
+                            WordPress ile <span class="highlight">Profesyonel</span> Web Sitesi
+                        </h2>
+                        <p class="section-description" data-aos="fade-up" data-aos-delay="300">
+                            İşletmeniz için <span class="text-primary">özelleştirilmiş WordPress temaları</span> ve güçlü eklentilerle profesyonel web sitesi çözümleri sunuyoruz. <span class="text-primary">Mobil uyumlu</span> ve yüksek performanslı sitelerle
+                            online varlığınızı güçlendirin.
+                        </p>
+                        <div class="wordpress-features mt-5">
+                            <div class="row g-4">
+                                <div class="col-6" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="service-feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-mobile-alt"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Mobil Uyumlu</h4>
+                                            <p>Tüm Cihazlarda Kusursuz Görünüm</p>
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="service-feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Yüksek Performans</h4>
+                                            <p>Hızlı Yükleme Süreleri</p>
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="service-image">
+                        <div class="image-wrapper">
+                            <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\word.jpg" alt="WordPress Web Tasarım" class="img-fluid">
+                            <div class="floating-badge">
+                                <i class="fab fa-wordpress"></i>
+                                <span>WordPress Uzmanı</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Marketing Section -->
+    <section class="digital-marketing-section py-5" id="digital-marketing-section" data-aos="fade-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="service-image">
+                        <div class="image-wrapper">
+                            <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\ads.jpg" alt="Dijital Pazarlama" class="img-fluid">
+                            <div class="floating-badge">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Dijital Pazarlama Uzmanı</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="digital-marketing-content">
+                        <div class="section-icon mb-4" data-aos="zoom-in">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <span class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-chart-pie me-2"></i>Etkili Dijital Pazarlama
+                        </span>
+                        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
+                            Dijital Dünyada <span class="highlight">Öne Çıkın</span>
+                        </h2>
+                        <p class="section-description" data-aos="fade-up" data-aos-delay="300">
+                            <span class="text-primary">Sosyal medya yönetimi</span>, <span class="text-primary">Google Ads</span> ve <span class="text-primary">içerik pazarlama</span> stratejileriyle markanızı dijital dünyada güçlendiriyoruz.
+                        </p>
+                        <div class="marketing-features mt-5">
+                            <div class="row g-4">
+                                <div class="col-6" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="service-feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fab fa-google"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Google Ads</h4>
+                                            <p>Hedefli Reklam Yönetimi</p>
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 88%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="service-feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-hashtag"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Sosyal Medya</h4>
+                                            <p>Etkili İçerik Yönetimi</p>
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 92%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile & Web Apps Section -->
+    <section class="apps-section py-5" id="apps-section" data-aos="fade-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="apps-content">
+                        <div class="section-icon mb-4" data-aos="zoom-in">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <span class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-code me-2"></i>Mobil & Web Uygulamaları
+                        </span>
+                        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
+                            Modern <span class="highlight">Uygulama</span> Çözümleri
+                        </h2>
+                        <p class="section-description" data-aos="fade-up" data-aos-delay="300">
+                            İşletmeniz için <span class="text-primary">özel mobil uygulamalar</span> ve <span class="text-primary">web tabanlı yazılımlar</span> geliştiriyoruz. Kullanıcı dostu arayüzler ve güçlü altyapılarla işlerinizi kolaylaştırın.
+                        </p>
+                        <div class="apps-features mt-5">
+                            <div class="row g-4">
+                                <div class="col-6" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="service-feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-mobile-alt"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Mobil Uygulama</h4>
+                                            <p>iOS & Android Geliştirme</p>
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="service-feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-laptop-code"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Web Uygulamaları</h4>
+                                            <p>Özel Yazılım Çözümleri</p>
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="service-image">
+                        <div class="image-wrapper">
+                            <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\webb.png" alt="Mobil ve Web Uygulamaları" class="img-fluid">
+                            <div class="floating-badge">
+                                <i class="fas fa-code"></i>
+                                <span>Yazılım Geliştirme</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ERP Systems Section -->
+    <section class="erp-section py-5" id="erp-section" data-aos="fade-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="service-image">
+                        <div class="image-wrapper">
+                            <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\erp.jpg" alt="ERP Sistemleri" class="img-fluid">
+                            <div class="floating-badge">
+                                <i class="fas fa-cogs"></i>
+                                <span>ERP Uzmanı</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="erp-content">
+                        <div class="section-icon mb-4" data-aos="zoom-in">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <span class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-sync me-2"></i>İş Süreçleri Otomasyonu
+                        </span>
+                        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
+                            Modern <span class="highlight">ERP</span> Çözümleri
+                        </h2>
+                        <p class="section-description" data-aos="fade-up" data-aos-delay="300">
+                            İşletmenizin tüm süreçlerini <span class="text-primary">tek bir platformda</span> yönetin. <span class="text-primary">Özelleştirilmiş ERP çözümlerimizle</span> verimliliğinizi artırın ve maliyetlerinizi düşürün.
+                        </p>
+                        <div class="erp-features mt-5">
+                            <div class="row g-4">
+                                <div class="col-6" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="service-feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-chart-bar"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Süreç Yönetimi</h4>
+                                            <p>Entegre İş Süreçleri</p>
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 94%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="service-feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-tasks"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Stok Takibi</h4>
+                                            <p>Gerçek Zamanlı Kontrol</p>
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 96%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- E-commerce Optimization Section -->
+    <section class="ecommerce-section py-5" id="ecommerce-section" data-aos="fade-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="ecommerce-content">
+                        <div class="section-icon mb-4" data-aos="zoom-in">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <span class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-rocket me-2"></i>E-Ticaret Optimizasyonu
+                        </span>
+                        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
+                            E-Ticaret'te <span class="highlight">Zirveye</span> Ulaşın
+                        </h2>
+                        <p class="section-description" data-aos="fade-up" data-aos-delay="300">
+                            <span class="text-primary">Dönüşüm oranlarını artıran</span> optimizasyon stratejileri ve <span class="text-primary">satış odaklı</span> çözümlerle online mağazanızı güçlendirin.
+                        </p>
+                        <div class="ecommerce-features mt-5">
+                            <div class="row g-4">
+                                <div class="col-6" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="service-feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-funnel-dollar"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Dönüşüm Optimizasyonu</h4>
+                                            <p>Satış Odaklı Stratejiler</p>
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 92%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="service-feature-item">
+                                        <div class="feature-icon">
+                                            <i class="fas fa-user-check"></i>
+                                        </div>
+                                        <div class="feature-content">
+                                            <h4>Kullanıcı Deneyimi</h4>
+                                            <p>UX/UI İyileştirmeleri</p>
+                                            <div class="progress mt-2">
+                                                <div class="progress-bar" role="progressbar" style="width: 88%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="service-image">
+                        <div class="image-wrapper">
+                            <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\etc.jpg" alt="E-Ticaret Optimizasyonu" class="img-fluid">
+                            <div class="floating-badge">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span>E-Ticaret Uzmanı</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meeting Section -->
+    <section class="meeting-section py-5" data-aos="fade-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="meeting-content">
+                        <div class="section-icon mb-4" data-aos="zoom-in">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">
+                            Bir toplantı <span class="highlight">planlayalım?</span>
+                        </h2>
+                        <p class="section-description" data-aos="fade-up" data-aos-delay="300">
+                            SEO ve Reklam çalışmalarını birlikte yürüttüğümüz onlarca işletme arasına sende katıl. Kazanmaya başla.
+                        </p>
+                        <div class="meeting-features mt-4">
+                            <div class="meeting-feature-item" data-aos="fade-up" data-aos-delay="400">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Ücretsiz Danışmanlık</span>
+                            </div>
+                            <div class="meeting-feature-item" data-aos="fade-up" data-aos-delay="500">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Online veya Yüz Yüze Görüşme</span>
+                            </div>
+                            <div class="meeting-feature-item" data-aos="fade-up" data-aos-delay="600">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Detaylı Analiz ve Raporlama</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-lg mt-4 meeting-btn" data-aos="fade-up" data-aos-delay="700">
+                            <i class="fas fa-calendar-alt me-2"></i> Uzmanımızla Toplantı Ayarlayın!
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="meeting-image">
+                        <div class="image-wrapper">
+                            <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\toplanti-yonetim-sistemi.png" alt="Toplantı Planlama" class="img-fluid">
+                            <div class="floating-badge">
+                                <i class="fas fa-comments"></i>
+                                <span>Sorularınız varsa, hızlıca toplantı talep edebilirsiniz.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-content">
+                        <p class="footer-description">
+                            Profesyonel ekibimizle, işinizi daha büyük ve daha başarılı hale getirmek için buradayız. Size özel dijital pazarlama çözümleri için adım atın.
+                        </p>
+                        <div class="footer-buttons">
+                            <a href="#" class="btn btn-light btn-meeting" onclick="openZoomMeeting()">
+                                <i class="fas fa-user-friends"></i> Uzmanla Toplantı Planlayın
+                            </a>
+                            <a href="https://wa.me/905516204117" target="_blank" class="btn btn-success btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp Destek Hattı
+                            </a>
+                            <a href="#products" class="btn btn-info btn-products">
+                                <i class="fas fa-shopping-cart"></i> Dijital Ürünlerimizi İncele
+                            </a>
+                        </div>
+                        <div class="social-links mt-4">
+                            <span>Bizi Sosyal Medya'da Takip Edin!</span>
+                            <div class="social-icons">
+                                <a href="https://instagram.com/sartechyazilim" target="_blank" class="instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://linkedin.com/company/sartech" target="_blank" class="linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h3>Hizmetler</h3>
+                        <ul>
+                            <li><a href="#seo">SEO (Arama Motoru Optimizasyonu)</a></li>
+                            <li><a href="#ads">Google Ads</a></li>
+                            <li><a href="#web">Web Tasarım</a></li>
+                            <li><a href="#social">Meta/Sosyal Medya Reklamcılığı</a></li>
+                            <li><a href="#ecommerce">E-Ticaret Optimizasyonu</a></li>
+                            <li><a href="#analysis">Rakip ve Pazar Analizi Danışmanlığı</a></li>
+                            <li><a href="#brand">Marka Yönetimi Danışmanlığı</a></li>
+                            <li><a href="#maps">Google Haritalar SEO Danışmanlığı</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h3>Kurumsal</h3>
+                        <ul>
+                            <li><a href="#about">Hakkımızda</a></li>
+                            <li><a href="#references">Tüm Hizmetlerimiz</a></li>
+                            <li><a href="#references">Referanslar</a></li>
+                            <li><a href="#contact">İletişim</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#privacy">Gizlilik Politikası</a></li>
+                            <li><a href="#terms">İptal - İade Şartları</a></li>
+                            <li><a href="#kvkk">KVKK ve Aydınlatma Metni</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Lazy Loading için -->
+    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+    <!-- Image Optimization -->
+    <script src="https://cdn.jsdelivr.net/npm/compress.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Navbar Scroll Effect
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 50) {
+                $('.navbar').addClass('scrolled');
+            } else {
+                $('.navbar').removeClass('scrolled');
+            }
+        });
+
+        // AOS Başlatma
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Particles.js Başlatma
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#ffffff'
+                },
+                shape: {
+                    type: 'circle'
+                },
+                opacity: {
+                    value: 0.5,
+                    random: true,
+                    animation: {
+                        enable: true,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    animation: {
+                        enable: true,
+                        speed: 2,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#ffffff',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'grab'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 140,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    push: {
+                        particles_nb: 4
+                    }
+                }
+            },
+            retina_detect: true
+        });
+
+        // Typed.js Başlatma
+        new Typed('.typed-text', {
+            strings: ['Dijital Dönüşümün', 'Öncü Gücü'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+
+        // Swiper Başlatma
+        const swiper = new Swiper('.mySwiper', {
+            effect: 'slide',
+            grabCursor: true,
+            loop: true,
+            speed: 800,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 1,
+                },
+                1024: {
+                    slidesPerView: 1,
+                },
+            }
+        });
+
+        // Dropdown menüler için
+        document.addEventListener('DOMContentLoaded', function() {
+            // Bootstrap dropdown'ları başlat
+            var dropdowns = document.querySelectorAll('.dropdown-toggle');
+            dropdowns.forEach(function(dropdown) {
+                dropdown.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var menu = this.nextElementSibling;
+                    if (window.innerWidth > 992) {
+                        // Desktop davranışı
+                        if (!menu.classList.contains('show')) {
+                            menu.classList.add('show');
+                            menu.style.display = 'block';
+                            setTimeout(() => {
+                                menu.style.opacity = '1';
+                                menu.style.visibility = 'visible';
+                                menu.style.transform = 'translateY(0)';
+                            }, 10);
+                        }
+                    } else {
+                        // Mobil davranışı
+                        if (menu.classList.contains('show')) {
+                            menu.classList.remove('show');
+                        } else {
+                            menu.classList.add('show');
+                        }
+                    }
+                });
+            });
+
+            // Hizmetler butonuna tıklandığında dropdown menüyü aç
+            document.querySelector('.hero-buttons .btn-light').addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('a[href="#hizmetlerimiz"]').click();
+                document.querySelector('#hizmetlerimiz').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+
+            // WhatsApp butonu
+            document.querySelector('.hero-buttons .btn-success').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.open('https://wa.me/905516204117', '_blank');
+            });
+
+            // Smooth scroll için tüm linkler
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Mobil menüyü kapat
+                        const navbarCollapse = document.querySelector('.navbar-collapse');
+                        if (navbarCollapse.classList.contains('show')) {
+                            document.querySelector('.navbar-toggler').click();
+                        }
+                    }
+                });
+            });
+
+            // SEO link tıklama
+            document.querySelector('.seo-link').addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // GSAP Animasyonları
+        gsap.from('.hero-title', {
+            duration: 1,
+            y: 100,
+            opacity: 0,
+            ease: 'power4.out'
+        });
+
+        // Zoom Meeting Function
+        function openZoomMeeting() {
+            window.open('https://zoom.us/j/YOUR_MEETING_ID', '_blank');
+        }
+
+        // Smooth Scroll for Service Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').slice(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Meeting Button Click Handler
+        document.querySelector('.meeting-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            openZoomMeeting();
+        });
+
+        // Dropdown menü kontrolü
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dropdown menülerin dışına tıklandığında kapanması için
+            document.addEventListener('click', function(e) {
+                const dropdowns = document.querySelectorAll('.dropdown-menu.show');
+                dropdowns.forEach(dropdown => {
+                    // Tıklanan eleman dropdown veya dropdown toggle değilse menüyü kapat
+                    if (!dropdown.contains(e.target) && !e.target.matches('.dropdown-toggle')) {
+                        dropdown.classList.remove('show');
+                    }
+                });
+            });
+
+            // Dropdown toggle tıklama olayı
+            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const menu = this.nextElementSibling;
+
+                    // Diğer açık menüleri kapat
+                    document.querySelectorAll('.dropdown-menu.show').forEach(dropdown => {
+                        if (dropdown !== menu) {
+                            dropdown.classList.remove('show');
+                        }
+                    });
+
+                    // Tıklanan menüyü aç/kapat
+                    menu.classList.toggle('show');
+                });
+            });
+        });
+
+        // Smooth scroll function for sections
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                // Close mobile menu if open
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    document.querySelector('.navbar-toggler').click();
+                }
+                // Close dropdown
+                document.querySelectorAll('.dropdown-menu.show').forEach(dropdown => {
+                    dropdown.classList.remove('show');
+                });
+            }
+        }
+    </script>
+</body>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</html>

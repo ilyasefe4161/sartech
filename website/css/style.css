@@ -1,0 +1,210 @@
+:root {
+    --primary-color: #1a1a1a;
+    --accent-color: #0066cc;
+    --text-primary: #008aff;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-link {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    padding: 8px 20px !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+
+/* Dropdown Animasyonları */
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    padding: 8px 20px;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: var(--accent-color);
+    padding-left: 25px;
+}
+
+
+/* İletişim Bilgileri */
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--accent-color);
+}
+
+.contact-info i {
+    color: var(--accent-color);
+}
+
+
+/* Animasyon Sınıfları */
+
+.animate {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
+.slideIn {
+    animation-name: slideIn;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Mobil Görünüm */
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin: 15px 0;
+    }
+    .contact-info {
+        margin: 15px 0;
+        text-align: center;
+    }
+    .contact-info a {
+        display: block;
+        margin: 10px 0;
+    }
+    .dropdown-menu {
+        border: none;
+        box-shadow: none;
+        padding-left: 20px;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+/* Mavi Arka Plan Bölümü */
+
+.elementor-section {
+    position: relative;
+    padding: 120px 0px;
+}
+
+.elementor-section:before {
+    border: unset;
+    border-radius: inherit;
+    background: var(--text-primary, #008aff) !important;
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0 !important;
+    transform: translateZ(0px);
+}
+
+.elementor-element {
+    --widgets-spacing: 20px 20px;
+    --widgets-spacing-row: 20px;
+    --widgets-spacing-column: 20px;
+    --flex-direction: initial;
+    --flex-wrap: initial;
+    --justify-content: initial;
+    --align-items: initial;
+    --align-content: initial;
+    --gap: initial;
+    --flex-basis: initial;
+    --flex-grow: initial;
+    --flex-shrink: initial;
+    --order: initial;
+    --align-self: initial;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Mavi Arka Plan Bölümü */
+
+.elementor-section {
+    position: relative;
+    padding: 120px 0px;
+}
+
+.elementor-section:before {
+    border: unset;
+    border-radius: inherit;
+    background: var(--text-primary, #008aff) !important;
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0 !important;
+    transform: translateZ(0px);
+}
+
+.elementor-element {
+    --widgets-spacing: 20px 20px;
+    --widgets-spacing-row: 20px;
+    --widgets-spacing-column: 20px;
+    --flex-direction: initial;
+    --flex-wrap: initial;
+    --justify-content: initial;
+    --align-items: initial;
+    --align-content: initial;
+    --gap: initial;
+    --flex-basis: initial;
+    --flex-grow: initial;
+    --flex-shrink: initial;
+    --order: initial;
+    --align-self: initial;
+    position: relative;
+    z-index: 1;
+}
+
+:root {
+    --text-primary: #008aff;
+}

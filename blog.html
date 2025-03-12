@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - SARTECH Software</title>
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="" alt=""> SARTECH
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Anasayfa</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Hizmetlerimiz
+                        </a>
+                        <ul class="dropdown-menu animate slideIn">
+                            <li><a class="dropdown-item" href="index.html#wordpress-section">Web Site Hizmeti</a></li>
+                            <li><a class="dropdown-item" href="index.html#seo-section">SEO</a></li>
+                            <li><a class="dropdown-item" href="index.html#digital-marketing-section">Google ADS Reklam Yönetimi</a></li>
+                            <li><a class="dropdown-item" href="index.html#brand-section">Marka Yönetim Danışmanlığı</a></li>
+                            <li><a class="dropdown-item" href="index.html#ecommerce-section">E-Ticaret Optimizasyonu</a></li>
+                            <li><a class="dropdown-item" href="index.html#maps-section">Google Haritalar SEO</a></li>
+                            <li><a class="dropdown-item" href="index.html#erp-section">ERP Sistemleri</a></li>
+                            <li><a class="dropdown-item" href="index.html#apps-section">Mobil Uygulamalar</a></li>
+                            <li><a class="dropdown-item" href="index.html#apps-section">Web Uygulamaları</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown">
+                            Hakkımızda
+                        </a>
+                        <ul class="dropdown-menu animate slideIn">
+                            <li><a class="dropdown-item" href="about.html#kurumsal">Kurumsal</a></li>
+                            <li><a class="dropdown-item" href="about.html#referanslar">Referanslar</a></li>
+                            <li><a class="dropdown-item" href="about.html#kadromuz">Kadromuz</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    </li>
+                </ul>
+
+                <div class="contact-info">
+                    <a href="mailto:info@sartech.com" class="me-3">
+                        <i class="fas fa-envelope me-2"></i>
+                        <span>
+                            <span class="contact-label">E-posta</span>
+                        <span class="contact-value">info@sartech.com</span>
+                        </span>
+                    </a>
+                    <a href="tel:+905346994117" class="me-2">
+                        <i class="fas fa-phone me-2"></i>
+                        <span>
+                            <span class="contact-label">Ali Furkan Sağır</span>
+                        <span class="contact-value">+90 534 699 41 17</span>
+                        </span>
+                    </a>
+                    <a href="tel:+905516204117">
+                        <i class="fas fa-phone me-2"></i>
+                        <span>
+                            <span class="contact-label">İlyas Efe Sarısüleyman</span>
+                        <span class="contact-value">+90 551 620 40 02</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12" data-aos="fade-up">
+                    <h1>SARTECH Blog</h1>
+                    <p>Dijital dünyadan en güncel haberler, trendler ve uzman görüşleri</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="categories-wrapper" data-aos="fade-up">
+                        <button class="category-btn active">Tümü</button>
+                        <button class="category-btn">SEO</button>
+                        <button class="category-btn">Dijital Pazarlama</button>
+                        <button class="category-btn">Web Tasarım</button>
+                        <button class="category-btn">E-Ticaret</button>
+                        <button class="category-btn">Teknoloji</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post -->
+    <section class="featured-blog py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="featured-post" data-aos="fade-up">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="featured-image">
+                                    <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\e -ticaret.png" alt="Featured Blog Post">
+                                    <div class="featured-badge">
+                                        <i class="fas fa-star"></i>
+                                        <span>Öne Çıkan</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="featured-content">
+                                    <span class="blog-category">SEO</span>
+                                    <h2>2024 SEO Trendleri ve Dijital Pazarlama Stratejileri</h2>
+                                    <p class="blog-meta">
+                                        <i class="far fa-calendar"></i> 15 Mart 2024
+                                        <i class="far fa-user ms-3"></i> İlyas Efe Sarısüleyman
+                                        <i class="far fa-clock ms-3"></i> 10 dk okuma
+                                    </p>
+                                    <p class="blog-excerpt">
+                                        2024 yılında SEO dünyasında öne çıkan trendler, yapay zeka entegrasyonları ve yeni nesil dijital pazarlama stratejileri hakkında detaylı bir inceleme. İşletmenizi bir adım öne taşıyacak güncel bilgiler ve uzman önerileri...
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Devamını Oku <i class="fas fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Blog Card 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\web.png" alt="Blog Image">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="blog-category">Web Tasarım</span>
+                            <h3 class="blog-title">Modern Web Tasarımında UX/UI Prensipleri</h3>
+                            <p class="blog-meta">
+                                <i class="far fa-calendar"></i> 12 Mart 2024
+                                <i class="far fa-clock ms-3"></i> 8 dk okuma
+                            </p>
+                            <p class="blog-excerpt">
+                                Kullanıcı deneyimi ve arayüz tasarımının modern web sitelerindeki önemi, başarılı örnekler ve uygulama yöntemleri...
+                            </p>
+                            <a href="#" class="blog-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\etc.jpg" alt="Blog Image">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="blog-category">E-Ticaret</span>
+                            <h3 class="blog-title">E-Ticaret Sitelerinde Dönüşüm Optimizasyonu</h3>
+                            <p class="blog-meta">
+                                <i class="far fa-calendar"></i> 10 Mart 2024
+                                <i class="far fa-clock ms-3"></i> 12 dk okuma
+                            </p>
+                            <p class="blog-excerpt">
+                                Online mağazanızın dönüşüm oranlarını artırmak için uygulamanız gereken stratejiler ve optimizasyon teknikleri...
+                            </p>
+                            <a href="#" class="blog-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\word.jpg" alt="Blog Image">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="blog-category">Dijital Pazarlama</span>
+                            <h3 class="blog-title">Google Ads ile Etkili Reklam Kampanyaları</h3>
+                            <p class="blog-meta">
+                                <i class="far fa-calendar"></i> 8 Mart 2024
+                                <i class="far fa-clock ms-3"></i> 15 dk okuma
+                            </p>
+                            <p class="blog-excerpt">
+                                Google Ads platformunda başarılı reklam kampanyaları oluşturmanın püf noktaları ve optimizasyon stratejileri...
+                            </p>
+                            <a href="#" class="blog-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 4 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\Web-tasarim.jpg" alt="Blog Image">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="blog-category">Teknoloji</span>
+                            <h3 class="blog-title">Yapay Zeka ve İşletmelerin Geleceği</h3>
+                            <p class="blog-meta">
+                                <i class="far fa-calendar"></i> 5 Mart 2024
+                                <i class="far fa-clock ms-3"></i> 10 dk okuma
+                            </p>
+                            <p class="blog-excerpt">
+                                Yapay zeka teknolojilerinin işletmelere sağladığı avantajlar ve gelecekteki potansiyel kullanım alanları...
+                            </p>
+                            <a href="#" class="blog-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 5 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\seo.jpg" alt="Blog Image">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="blog-category">SEO</span>
+                            <h3 class="blog-title">Yerel SEO Optimizasyonu ve İşletme Başarısı</h3>
+                            <p class="blog-meta">
+                                <i class="far fa-calendar"></i> 3 Mart 2024
+                                <i class="far fa-clock ms-3"></i> 8 dk okuma
+                            </p>
+                            <p class="blog-excerpt">
+                                Yerel işletmeler için SEO stratejileri, Google My Business optimizasyonu ve yerel pazarlama taktikleri...
+                            </p>
+                            <a href="#" class="blog-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 6 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="C:\Users\Ali Furkan SAĞIR\Desktop\sartech\website\assets\images\resim-opt.jpg" alt="Blog Image">
+                        </div>
+                        <div class="blog-card-content">
+                            <span class="blog-category">Sosyal Medya</span>
+                            <h3 class="blog-title">Etkili Sosyal Medya Yönetimi İpuçları</h3>
+                            <p class="blog-meta">
+                                <i class="far fa-calendar"></i> 1 Mart 2024
+                                <i class="far fa-clock ms-3"></i> 7 dk okuma
+                            </p>
+                            <p class="blog-excerpt">
+                                Sosyal medya platformlarında başarılı içerik stratejileri ve etkileşim artırma yöntemleri...
+                            </p>
+                            <a href="#" class="blog-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <nav class="blog-pagination" aria-label="Blog pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="newsletter-content" data-aos="fade-up">
+                        <i class="fas fa-envelope-open-text mb-4"></i>
+                        <h3>Güncel Kalın!</h3>
+                        <p>En yeni blog yazılarımızdan ve dijital pazarlama trendlerinden haberdar olmak için bültenimize abone olun.</p>
+                        <form class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="E-posta adresiniz">
+                                <button class="btn btn-primary" type="submit">Abone Ol</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-content">
+                        <p class="footer-description">
+                            Profesyonel ekibimizle, işinizi daha büyük ve daha başarılı hale getirmek için buradayız. Size özel dijital pazarlama çözümleri için adım atın.
+                        </p>
+                        <div class="footer-buttons">
+                            <a href="#" class="btn btn-light btn-meeting" onclick="openZoomMeeting()">
+                                <i class="fas fa-user-friends"></i> Uzmanla Toplantı Planlayın
+                            </a>
+                            <a href="https://wa.me/905516204117" target="_blank" class="btn btn-success btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp Destek Hattı
+                            </a>
+                        </div>
+                        <div class="social-links mt-4">
+                            <span>Bizi Sosyal Medya'da Takip Edin!</span>
+                            <div class="social-icons">
+                                <a href="https://instagram.com/sartechyazilim" target="_blank" class="instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://linkedin.com/company/sartech" target="_blank" class="linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h3>Hizmetler</h3>
+                        <ul>
+                            <li><a href="index.html#seo-section">SEO (Arama Motoru Optimizasyonu)</a></li>
+                            <li><a href="index.html#digital-marketing-section">Google Ads</a></li>
+                            <li><a href="index.html#wordpress-section">Web Tasarım</a></li>
+                            <li><a href="index.html#digital-marketing-section">Meta/Sosyal Medya Reklamcılığı</a></li>
+                            <li><a href="index.html#ecommerce-section">E-Ticaret Optimizasyonu</a></li>
+                            <li><a href="index.html#digital-marketing-section">Rakip ve Pazar Analizi Danışmanlığı</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h3>Kurumsal</h3>
+                        <ul>
+                            <li><a href="about.html#kurumsal">Hakkımızda</a></li>
+                            <li><a href="about.html#referanslar">Referanslar</a></li>
+                            <li><a href="about.html#kadromuz">Kadromuz</a></li>
+                            <li><a href="contact.html">İletişim</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // AOS Başlatma
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Navbar Scroll Effect
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 50) {
+                $('.navbar').addClass('scrolled');
+            } else {
+                $('.navbar').removeClass('scrolled');
+            }
+        });
+
+        // Blog Category Filter
+        $('.category-btn').click(function() {
+            $('.category-btn').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        // Newsletter Form Submit
+        $('.newsletter-form').submit(function(e) {
+            e.preventDefault();
+            // Add your newsletter subscription logic here
+        });
+    </script>
+</body>
+
+</html>
